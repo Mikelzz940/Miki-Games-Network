@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karta Dittochu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+        .card img {
+            width: 200px;
+        }
+        .info {
+            margin-top: 10px;
+        }
+        button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #ff9900;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Dittochu - Specjalna Karta Pokémon</h1>
+    <div class="card">
+        <img src="/Pokémon_Ditto.png" alt="Dittochu">
+        <div class="info">
+            <p><strong>Typ:</strong> Normalny</p>
+            <p><strong>HP:</strong> <span id="hp">?</span></p>
+            <p><strong>Atak:</strong> <span id="attack">?</span></p>
+            <button onclick="pokazStatystyki()">Pokaż Statystyki</button>
+        </div>
+    </div>
+
+    <script>
+        function pokazStatystyki() {
+            document.getElementById("hp").innerText = "90";
+            document.getElementById("attack").innerText = "70";
+        }
+    </script>
+
+</body>
+</html>
